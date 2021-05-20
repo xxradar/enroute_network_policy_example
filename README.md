@@ -145,7 +145,7 @@ Let's check if this works ...
   ```
 
 
-Let's add TLS support for Let's Encrypt
+## Let's add TLS support for Let's Encrypt
 ```
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
