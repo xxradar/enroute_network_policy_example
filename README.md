@@ -68,7 +68,7 @@ $ curl -kv http://10.11.2.48:32245/app1
 * Connection #0 to host 10.11.2.48 left intact
 ```
 This proves that the gateway is up (404 error)
-
+The next check verifies the GatewayHost ...
 ```
 $ curl -kv -H "Host: app-routable-demo.dockerhack.me"  http://10.11.2.48:32245/app1
 *   Trying 10.11.2.48...
@@ -89,6 +89,7 @@ $ curl -kv -H "Host: app-routable-demo.dockerhack.me"  http://10.11.2.48:32245/a
 * Connection #0 to host 10.11.2.48 left intact
 upstream connect error or disconnect/reset before headers. reset reason: connection failure
 ```
+The connection to the application is refused.
 The network policies in place for ns app-routable-demo prevent Enroute to connect to the configure services
 
 Create a network policy allowing enroute to connect to service in app-routable-demo namespace
