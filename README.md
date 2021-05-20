@@ -1,6 +1,4 @@
-# enroute_network_policy_example
-
-
+# Enroute Ingress Gateway Network policy Deployment
 
 ## Install demo app
 ```
