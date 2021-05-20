@@ -89,8 +89,8 @@ $ curl -kv -H "Host: app-routable-demo.dockerhack.me"  http://10.11.2.48:32245/a
 * Connection #0 to host 10.11.2.48 left intact
 upstream connect error or disconnect/reset before headers. reset reason: connection failure
 ```
-The connection to the application is refused.
-The network policies in place for ns app-routable-demo prevent Enroute to connect to the configure services
+The connection to the application is refused.<br>
+The network policies in place for ns app-routable-demo prevent Enroute to connect to the configure services<BR>
 
 Create a network policy allowing enroute to connect to service in app-routable-demo namespace
 ```
