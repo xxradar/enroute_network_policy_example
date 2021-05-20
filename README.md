@@ -99,7 +99,6 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: ingress-control
-  namespace: app-routable-demo
 spec:
   podSelector:
     matchLabels:
